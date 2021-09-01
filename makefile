@@ -6,7 +6,7 @@ all: main.o myfunc.o
 main.o: main.cpp myfunc.h
 	g++ $(CFLAGS) -c main.cpp
 
-func.o: myfunc.cpp myfunc.h
+myfunc.o: myfunc.cpp myfunc.h
 	g++ $(CFLAGS) -c myfunc.cpp
 
 clean:
